@@ -1,15 +1,15 @@
 import InputCard from "./InputCard"
 
 
-function Submission({submitteditem}) {
+function Submission() {
 
-  
-  
   return (
     
-  <InputCard>
-  {submitteditem}
-  </InputCard>
+<InputCard>
+
+
+
+</InputCard>
    
   )
 }

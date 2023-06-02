@@ -1,13 +1,12 @@
 import InputCard from "./InputCard"
 
 
-function Submission() {
+function Submission({subItem}) {
 
   return (
     
 <InputCard>
-
-
+ {subItem}
 
 </InputCard>
    

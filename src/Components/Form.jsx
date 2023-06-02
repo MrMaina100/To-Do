@@ -1,5 +1,5 @@
 import { useState } from "react";
-function Form() { 
+function Form({onsubmit}) { 
   
   const [textInput, setTextInput] = useState({
     input:''
@@ -9,10 +9,11 @@ function Form() {
   
 
   const handleSubmit = (e)=>{
-    e.preventDefault()  
-  
-    console.log(textInput);   
+    e.preventDefault()
+    onsubmit(textInput.input)
 
+    setTextInput({...textInput, input:''});
+   
   }
 
 

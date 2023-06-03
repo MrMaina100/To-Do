@@ -1,13 +1,23 @@
 import { useState } from "react";
 function Form({setSubItem}) { 
 
-  const [itemIput, setItemInput] = useState('')
+  const [itemIput, setItemInput] = useState([])
 
   const handleSubmit = (e)=>{
     e.preventDefault();
+    if(itemIput){
+      setSubItem((prevItems)=> [...prevItems, itemIput])
+      setItemInput('')
+    }
 
-    setSubItem(itemIput);
-    setItemInput('')
+    console.log(typeof(itemIput));
+
+
+
+    // console.log(typeof(itemIput));
+
+    // setSubItem(itemIput);
+    // setItemInput('')
 
     
 

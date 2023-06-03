@@ -1,14 +1,22 @@
 import InputCard from "./InputCard"
 
 
+
 function Submission({subItem}) {
 
-  return (
-    
-<InputCard>
- {subItem}
+ 
 
-</InputCard>
+  return (
+
+    <>
+    {subItem.map((item,index)=>{
+      return <InputCard key={index}>
+        {item}
+      </InputCard>      
+
+    })}
+    </>
+
    
   )
 }

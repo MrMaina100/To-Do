@@ -6,7 +6,6 @@ function InputCard({children}) {
 
         {children}
 
-
       </div>
 
    </div>

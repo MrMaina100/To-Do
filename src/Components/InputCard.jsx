@@ -1,10 +1,17 @@
-function InputCard({children}) {
+import {FaTimes} from 'react-icons/fa'
+
+function InputCard({children, handleDelete}) {
   return (
   
-   <div className="flex flex-col space-y-4 ">
-      <div className="p-3 md:p-4 rounded-md shadow-lg">
+   <div className="flex flex-col space-y-1 ">
+     
+      <div className=" flex justify-between p-3 md:p-4 rounded-md shadow-lg">
 
         {children}
+
+        <button className='text-red-600 w-2' onClick={()=>handleDelete(children.toString())}>
+          <FaTimes ></FaTimes>
+        </button>
 
       </div>
 

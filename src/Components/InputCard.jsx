@@ -1,6 +1,6 @@
 import {FaTimes} from 'react-icons/fa'
 
-function InputCard({children, handleDelete}) {
+function InputCard({children, handleDelete, item}) {
   return (
   
    <div className="flex flex-col space-y-1 ">
@@ -9,7 +9,7 @@ function InputCard({children, handleDelete}) {
 
         {children}
 
-        <button className='text-red-600 w-2' onClick={()=>handleDelete(children.toString())}>
+        <button className='text-red-600 w-2' onClick={()=>handleDelete(item)}>
           <FaTimes ></FaTimes>
         </button>
 

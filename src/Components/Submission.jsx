@@ -2,7 +2,7 @@ import InputCard from "./InputCard"
 
 
 
-function Submission({subItem}) {
+function Submission({subItem, handleDelete}) {
 
  
 
@@ -10,7 +10,11 @@ function Submission({subItem}) {
 
     <>
     {subItem.map((item,index)=>{
-      return <InputCard key={index}>
+      return <InputCard
+       key={index}
+       item={item}
+       handleDelete={handleDelete}
+       >
         {item}
       </InputCard>      
 

@@ -10,19 +10,7 @@ function Form({setSubItem}) {
       setItemInput('')
     }
 
-    console.log(typeof(itemIput));
-
-
-
-    // console.log(typeof(itemIput));
-
-    // setSubItem(itemIput);
-    // setItemInput('')
-
-    
-
-    
-
+ 
   }
  
   return (
